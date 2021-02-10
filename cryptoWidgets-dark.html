@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Crypto widgets | weather widgets</title>
+		<link href='https://fonts.googleapis.com/css?family=Source Code Pro' rel='stylesheet'>
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+				<style>
+					body {
+					padding: 25px;
+					background-color: #071c31;
+					color: #808080;
+					font-size: 25px;
+					font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+					}
+
+					h1 {
+					}
+
+					a {
+					color: #808080;
+					text-decoration: none;
+					}
+
+
+					.dark-mode {
+					background-color: white;
+					color: black;
+					}
+
+					.Darkbutton {
+					background-color: #808080;
+					border: none;
+					color: white;
+					padding: 15px 32px;
+					text-align: center;
+					text-decoration: none;
+					display: inline-block;
+					font-size: 16px;
+					margin: 4px 2px;
+					cursor: pointer;
+					border-radius: 4px;
+					}
+
+				</style>
+			</head>
+			<body><!--
+				<div class="multi-cols">
+					<button onclick="myFunction()" class="Darkbutton">Toggle dark mode</button>
+
+					<script>
+						function myFunction() {
+						var element = document.body;
+						element.classList.toggle("dark-mode");
+						}
+					</script>
+					-->
+				<h2>Major coins</h2>
+				<div>
+					<script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinPriceBlock.js"></script><div id="coinmarketcap-widget-coin-price-block" coins="1,1027,825,2010,1839,512,2868,2011,2" currency="USD" theme="dark" transparent="true" show-symbol-logo="true"></div>
+					<h2>Cryptomarkets</h2>
+
+					<div class="tradingview-widget-container">
+						<div class="tradingview-widget-container__widget"></div>
+						<!--<div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/cryptocurrencies/prices-all/" rel="noopener" target="_blank"><span class="blue-text">Cryptocurrency Markets</span></a> by TradingView</div>-->
+						<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
+							{
+							"width": 1000,
+							"height": 490,
+							"defaultColumn": "overview",
+							"screener_type": "crypto_mkt",
+							"displayCurrency": "USD",
+							"colorTheme": "dark",
+							"locale": "en"
+							}
+						</script>
+					</div>
+					<!-- TradingView Widget END --></span>
+
+
+				<!--
+		<h2>Rates in BTC</h2>
+		<!-- TradingView Widget BEGIN --><!--
+		<div class="tradingview-widget-container">
+			<div class="tradingview-widget-container__widget"></div>
+			<div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/cryptocurrencies/prices-all/" rel="noopener" target="_blank"><span class="blue-text">Cryptocurrency Markets</span></a> by TradingView</div>
+			<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
+				{
+				"width": 1000,
+				"height": 490,
+				"defaultColumn": "performance",
+				"screener_type": "crypto_mkt",
+				"displayCurrency": "BTC",
+				"colorTheme": "dark",
+				"locale": "en"
+				}
+			</script>
+		</div>
+		<!-- TradingView Widget END -->
+				<hr />	
+				<span style="margin: auto; display: inline-block; padding-right: 40px; float: left;">
+					<h2>Borovets snow-forecast</h2>
+					<p></p>
+					<link href="https://www.snow-forecast.com/stylesheets/feed.css" media="screen" rel="stylesheet" type="text/css" /><div id="wf-weatherfeed">
+						<iframe style="overflow:hidden;border:none;" allowtransparency="true" height="272" width="469" src="https://www.snow-forecast.com/resorts/Borovets/forecasts/feed/mid/m" scrolling="no" frameborder="0" marginwidth="0" marginheight="0"><p>Your browser does not support iframes.</p>	
+						</iframe><div id="wf-link"><a href="https://www.snow-forecast.com/"><img alt="Snow Forecast" src="https://www.snow-forecast.com/images/feed/snowlogo-150.png"/></a><p id="cmt">View detailed snow forecast for <a href="https://www.snow-forecast.com/resorts/Borovets/6day/mid">Borovets</a> at:<br /><a href="https://www.snow-forecast.com/"><strong>snow-forecast.com</strong></a></p><div style="clear: both;"></div></div></div>
+				</span>
+				<span style="margin: auto; display: inline-block" class="meteoBlue">
+					<h2><a href="https://www.meteoblue.com/en/weather/week/sofia_bulgaria_727011?utm_source=weather_widget&utm_medium=linkus&utm_content=three&utm_campaign=Weather%2BWidget" target="_blank"> Meteoblue Sofia</a></h2>
+					<p></p>			
+					<iframe src="https://www.meteoblue.com/en/weather/widget/three/sofia_bulgaria_727011?geoloc=fixed&nocurrent=0&noforecast=0&days=5&tempunit=CELSIUS&windunit=KILOMETER_PER_HOUR&layout=image"  frameborder="0" scrolling="NO" allowtransparency="true" sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox" style="width: 575px; height: 611px"></iframe><div><!-- DO NOT REMOVE THIS LINK --></div>
+				</span>
+				<br />
+
+
+				<!--<script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinPriceBlock.js"></script><div id="coinmarketcap-widget-coin-price-block" coins="1,6636,2010,512,1027" currency="USD" theme="dark" transparent="false" show-symbol-logo="true" style="max-width: none; overflow: hidden !important;"></div>-->
+			</div>
+			<br />
+			<br />
+			<h2>Widget links:</h2>
+			<div>
+				<ul>
+					<li><a href="https://www.tradingview.com/widget/crypto-mkt-screener/">Trading view widget</a></li>
+					<li><a href="https://coinmarketcap.com/widget/price-blocks/">CoinMarketCap widget</a></li>
+					<li><a href="https://www.snow-forecast.com/pages/configure_feed1">Borovets widget</a></li>
+					<li><a href="https://www.meteoblue.com/en/weather/widget/setupthree/sofia_bulgaria_727011">Meteo blue</a></li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
