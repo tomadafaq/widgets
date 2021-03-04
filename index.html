@@ -8,8 +8,18 @@
 				<style>
 
 					/* landing page: screen only: mid screen */
-
-					@media screen and (min-width: 640px)
+					@media screen and (min-width: 1023px)
+					{
+					div.multi-cols
+					{
+					column-count: 3;
+					column-gap: 30px;
+					column-rule: none 1px lightgrey;
+					}		
+					}
+					
+					/* landing page: screen only: mid screen */
+					@media screen and (min-width: 640px) and (max-width: 1023px)
 					{
 					div.multi-cols
 					{
@@ -92,15 +102,15 @@
 					<!-- ETH -->
 					<span style="width:50%; margin: auto;">
 						<div style="margin: 10px;" class="nomics-ticker-widget" data-name="Ethereum" data-base="ETH" data-quote="USD"></div><script src="https://widget.nomics.com/embed.js"></script>
-					</span>	
-					<!-- BNB -->
-					<span style="width:50%; margin: 10px;">
-						<div class="nomics-ticker-widget" data-name="BinanceCoin" data-base="BNB" data-quote="USD"></div><script src="https://widget.nomics.com/embed.js"></script>
-					</span>	
+					</span>						
 					<!-- DOT -->
-					<span style="width:50%; margin: auto;">
+					<span style="width:50%; margin: 10px;">
 						<div class="nomics-ticker-widget" data-name="Polkadot" data-base="DOT" data-quote="USD"></div><script src="https://widget.nomics.com/embed.js"></script>
 					</span>
+					<!-- BNB -->
+					<span style="width:50%; margin: auto;">
+						<div class="nomics-ticker-widget" data-name="BinanceCoin" data-base="BNB" data-quote="USD"></div><script src="https://widget.nomics.com/embed.js"></script>
+					</span>	
 					<!-- KSM -->
 					<span style="width:50%; margin: 10px;">
 						<div class="nomics-ticker-widget" data-name="Kusama" data-base="KSM" data-quote="USD"></div><script src="https://widget.nomics.com/embed.js"></script>
