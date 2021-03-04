@@ -33,13 +33,24 @@
 
 					@media screen and (max-width: 640px)
 					{
-					div.multi-cols
+					div.multi-cols, div.two-cols
 						{
 						column-count: 1;
 						column-gap: 30px;
 						column-rule: none 1px lightgrey;
 						}	
 					}
+					
+					/* landing page: screen only: mid screen */
+					@media screen and (min-width: 640px)
+					{
+					div.two-cols
+						{
+						column-count: 2;
+						column-gap: 30px;
+						column-rule: none 1px lightgrey;
+						}
+					}					
 
 
 					/* dark */
@@ -126,7 +137,7 @@
 			<div>
 			
 				<!-- Price Blocks widget by CoinmarketCAP -->
-				<script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinPriceBlock.js"></script><div id="coinmarketcap-widget-coin-price-block" coins="1,1027,2010,1839,512,2868,2,5034" currency="USD" theme="dark" transparent="true" show-symbol-logo="true"></div>
+				<script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinPriceBlock.js"></script><div id="coinmarketcap-widget-coin-price-block" coins="1,1027,2010,1839,512,2,5034" currency="USD" theme="dark" transparent="true" show-symbol-logo="true"></div>
 				<hr />
 				
 				<!--Performance widget by TradingView-->	
@@ -168,7 +179,7 @@
 				
 				<hr />	
 				<!-- Weather widgets by Meteoblue -->
-				<div class="multi-cols">
+				<div class="two-cols">
 					<span style="margin: auto; display: inline-block" class="meteoBlue">
 						<h2><a href="https://www.meteoblue.com/en/weather/week/sofia_bulgaria_727011?utm_source=weather_widget&utm_medium=linkus&utm_content=three&utm_campaign=Weather%2BWidget" target="_blank">Sofia weather</a></h2>
 						<p></p>			
