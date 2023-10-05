@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+    /* Navigation strip styles */
+    
+    body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .topnav {
+    overflow: hidden;
+    background-color: #333;
+    }
+
+    .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    }
+
+    .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    }
+
+    .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+    }
+
+    /* landing page: screen only: mid screen */
+    @media screen and (min-width: 1023px)
+    {
+    div.multi-cols
+        {
+            column-count: 3;
+            column-gap: 30px;
+            column-rule: none 1px lightgrey;
+        }		
+    }
+
+    /* landing page: screen only: mid screen */
+    @media screen and (min-width: 640px) and (max-width: 1023px)
+    {
+    div.multi-cols
+        {
+            column-count: 2;
+            column-gap: 30px;
+            column-rule: none 1px lightgrey;
+        }	
+    }
+
+    /* landing page: screen only: small screen */
+
+    @media screen and (max-width: 640px)
+    {
+        div.multi-cols
+        {
+            column-count: 1;
+            column-gap: 30px;
+            column-rule: none 1px lightgrey;
+        }	
+    }
+
+    /* landing page: screen only: mid screen */
+
+    @media screen and (max-width: 640px)
+        {
+            .two-cols
+        {
+            column-count: 1;
+            column-gap: 30px;
+            column-rule: none 1px lightgrey;
+        }	
+    }
+
+    @media screen and (min-width: 640px)
+    {
+    .two-cols
+        {
+            column-count: 2;
+            column-gap: 30px;
+            column-rule: none 1px lightgrey;
+        }
+    }					
+
+
+    /* dark */
+    body 
+    {
+        padding: 25px;
+        background-color: #071c31;
+        color: #808080;
+        font-size: 25px;
+        font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    }
+
+    a
+    {
+        color: #808080;
+        text-decoration: none;
+    }
+
+    .dark-mode 
+    {
+        background-color: white;
+        color: black;
+    }
+
+    .Darkbutton 
+    {
+        background-color: #808080;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+
+</style>
+</head>
+<body>
+
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="crypto.html">Crypto</a>
+        <a href="sports.html">Sports</a>
+        <a class="active" href="weather.html">Weather</a>
+    </div>
+
+<div style="padding-left:16px">
+  <h2>Weather widgets</h2>
+
+  <hr />
+
+  <!-- Weather widgets -->					
+  <div class="two-cols">
+
+    <!-- MeteoBlue Sofia Widget-->
+        <span style="margin: auto; display: block" class="meteoBlue">
+            <h2><a href="https://www.meteoblue.com/en/weather/week/sofia_bulgaria_727011?utm_source=weather_widget&utm_medium=linkus&utm_content=three&utm_campaign=Weather%2BWidget" target="_blank">Sofia weather</a></h2>
+            <p></p>
+            <iframe src="https://www.meteoblue.com/en/weather/widget/three/sofia_bulgaria_727011?geoloc=fixed&nocurrent=0&noforecast=0&days=5&tempunit=CELSIUS&windunit=KILOMETER_PER_HOUR&layout=image"  frameborder="0" scrolling="NO" allowtransparency="true" sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox" style="width: 575px; height: 611px"></iframe>
+        </span>	
+
+    <!-- MeteoBlue Plovdiv Widget-->
+        <span style="margin-left: 10px; display: inline-block" class="meteoBlue">
+            <h2><a href="https://www.meteoblue.com/en/weather/week/sofia_bulgaria_727011?utm_source=weather_widget&utm_medium=linkus&utm_content=three&utm_campaign=Weather%2BWidget" target="_blank">Plovdiv weather</a></h2>
+            <p></p>			
+            <iframe src="https://www.meteoblue.com/en/weather/widget/three/plovdiv_bulgaria_728193?geoloc=fixed&nocurrent=0&noforecast=0&days=5&tempunit=CELSIUS&windunit=KILOMETER_PER_HOUR&layout=image"  frameborder="0" scrolling="NO" allowtransparency="true" sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox" style="width: 575px; height: 611px"></iframe>
+        </span>
+    </div>				
+    <br />
+    <hr />
+    
+        <div class="two-cols">
+        <!-- BOROVETS Widget by SnowForecast -->
+        
+        <span style="margin: auto; display: inline-block;">
+            <h2>Borovets snow-middle</h2>
+            <p></p>
+            <link href="https://www.snow-forecast.com/stylesheets/feed.css" media="screen" rel="stylesheet" type="text/css" />
+            <div id="wf-weatherfeed">
+                <iframe style="overflow:hidden;border:none;" allowtransparency="true" height="272" width="469" src="https://www.snow-forecast.com/resorts/Borovets/forecasts/feed/mid/m" scrolling="no" frameborder="0" marginwidth="0" marginheight="0"><p>Your browser does not support iframes.</p>	
+                </iframe>
+                <div id="wf-link"><a href="https://www.snow-forecast.com/">
+                    <img alt="Snow Forecast" src="https://www.snow-forecast.com/images/feed/snowlogo-150.png"/></a>
+                    <p id="cmt">View detailed snow forecast for <a href="https://www.snow-forecast.com/resorts/Borovets/6day/mid">Borovets</a> at:
+                        <a href="https://www.snow-forecast.com/"><strong>snow-forecast.com</strong></a>
+                    </p>
+                    <div style="clear: both;"></div>
+                </div>
+            </div>
+        </span>
+
+        <span style="margin: auto; display: inline-block;">
+            <h2>Borovets snow-top</h2>
+            <p></p>
+            <link href="//www.snow-forecast.com/stylesheets/feed.css" media="screen" rel="stylesheet" type="text/css" /><div id="wf-weatherfeed"><iframe allowtransparency="true" frameborder="0" height="272" marginheight="0" marginwidth="0" scrolling="no" src="//www.snow-forecast.com/resorts/Borovets/forecasts/feed/top/m" style="overflow:hidden;border:none;" width="469"><p>Your browser does not support iframes.</p></iframe><div id="wf-link"><a href="https://www.snow-forecast.com/"><img alt="Snow Forecast" height="40" src="https://www.snow-forecast.com/images/feed/snowlogo-150.png" width="150" /></a><p id="cmt">View detailed snow forecast for <a href="https://www.snow-forecast.com/resorts/Borovets/6day/mid">Borovets</a> at:<br /><a href="https://www.snow-forecast.com/"><strong>snow-forecast.com</strong></a></p><div style="clear: both;"></div></div></div>
+        </span>		
+
+</div>
+
+</body>
+</html>
