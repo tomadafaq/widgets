@@ -1,135 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-
-    /* Navigation strip styles */
-    
-    body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .topnav {
-    overflow: hidden;
-    background-color: #333;
-    }
-
-    .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    }
-
-    .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-    }
-
-    .topnav a.active {
-    background-color: #04AA6D;
-    color: white;
-    }
-
-    /* landing page: screen only: mid screen */
-    @media screen and (min-width: 1023px)
-    {
-    div.multi-cols
-        {
-            column-count: 3;
-            column-gap: 30px;
-            column-rule: none 1px lightgrey;
-        }		
-    }
-
-    /* landing page: screen only: mid screen */
-    @media screen and (min-width: 640px) and (max-width: 1023px)
-    {
-    div.multi-cols
-        {
-            column-count: 2;
-            column-gap: 30px;
-            column-rule: none 1px lightgrey;
-        }	
-    }
-
-    /* landing page: screen only: small screen */
-
-    @media screen and (max-width: 640px)
-    {
-        div.multi-cols
-        {
-            column-count: 1;
-            column-gap: 30px;
-            column-rule: none 1px lightgrey;
-        }	
-    }
-
-    /* landing page: screen only: mid screen */
-
-    @media screen and (max-width: 640px)
-        {
-            .two-cols
-        {
-            column-count: 1;
-            column-gap: 30px;
-            column-rule: none 1px lightgrey;
-        }	
-    }
-
-    @media screen and (min-width: 640px)
-    {
-    .two-cols
-        {
-            column-count: 2;
-            column-gap: 30px;
-            column-rule: none 1px lightgrey;
-        }
-    }					
-
-
-    /* dark */
-    body 
-    {
-        padding: 25px;
-        background-color: #071c31;
-        color: #808080;
-        font-size: 25px;
-        font-family: "Segoe UI", Arial, Helvetica, sans-serif;
-    }
-
-    a
-    {
-        color: #808080;
-        text-decoration: none;
-    }
-
-    .dark-mode 
-    {
-        background-color: white;
-        color: black;
-    }
-
-    .Darkbutton 
-    {
-        background-color: #808080;
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;
-        border-radius: 4px;
-    }
-
-</style>
+    <title>Sport widgets</title>
+    <!-- The favicon -->
+    <link rel="icon" href="btcvico.png" type="image/gif" sizes="32x32">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Ref to my CSS -->
+		<link rel="stylesheet" type="text/css" href="styles.css" />   
 </head>
 <body>
 
@@ -140,49 +17,84 @@
         <a href="weather.html">Weather</a>
     </div>
 
-<div style="padding-left:16px">
-  <h2>Football & Tennis widgets</h2>
-  <p>This page is dedicated mostly to Premier League and Liverpool FC... aaand a little bit of <a href="#tennis">tennis</a>.</p>
 
+  <h2>Football & Tennis widgets</h2>
+  <p>This page is dedicated mostly to football, namely Premier League, La Liga, Champions League and Europa League. </p>
+    <p>To the bottom you will find current rankings in <a href="#tennis" style="text-decoration-line: underline;">tennis</a>.</p>
+    
+    <hr />
 
   <!-- DIV 2 cols -->
   <div class="two-cols">
- 
+    
+    <!-- Premier League table -->
 
+    <span style="margin: auto; display: inline-block;">
 
-  <!-- Premier League table -->
+    <h2>Premier League current table</h2>
 
-<span style="margin: auto; display: inline-block;">
+    <p>Click on a team to view page with dedicated info.</p>
 
-<h2>Premier League current table</h2>
+    <div id="scoreaxis-widget-c1893" style="border-width:1px;border-color:rgba(0, 0, 0, 0.15);border-style:solid;border-radius:8px;padding:10px;background:rgb(255, 255, 255);width:100%;background-color:#333333">
+        <iframe id="Iframe" src="https://www.scoreaxis.com/widget/standings-widget/8?autoHeight=1&amp;removeBorders=1&amp;font=3&amp;borderColor=%23999999&amp;bodyBackground=%23333333&amp;textColor=%23ffffff&amp;inst=c1893" style="width:100%;border:none;transition:all 300ms ease">
+        </iframe>
+        <script>window.addEventListener("DOMContentLoaded",event=>{window.addEventListener("message",event=>{if(event.data.appHeight&&"c1893"==event.data.inst){let container=document.querySelector("#scoreaxis-widget-c1893 iframe");container&&(container.style.height=parseInt(event.data.appHeight)+"px")}},!1)});</script>
+    </div>
+    <div style="font-size: 12px; font-family: Arial, sans-serif; text-align: left;">Data provided by <a target="_blank" href="https://www.scoreaxis.com/">Scoreaxis</a></div>
 
-<div id="scoreaxis-widget-c1893" style="border-width:1px;border-color:rgba(0, 0, 0, 0.15);border-style:solid;border-radius:8px;padding:10px;background:rgb(255, 255, 255);width:100%;background-color:#333333">
-    <iframe id="Iframe" src="https://www.scoreaxis.com/widget/standings-widget/8?autoHeight=1&amp;removeBorders=1&amp;font=3&amp;borderColor=%23999999&amp;bodyBackground=%23333333&amp;textColor=%23ffffff&amp;inst=c1893" style="width:100%;border:none;transition:all 300ms ease">
-    </iframe>
-    <script>window.addEventListener("DOMContentLoaded",event=>{window.addEventListener("message",event=>{if(event.data.appHeight&&"c1893"==event.data.inst){let container=document.querySelector("#scoreaxis-widget-c1893 iframe");container&&(container.style.height=parseInt(event.data.appHeight)+"px")}},!1)});</script>
+    </span>
+
+    <!-- La Liga -->
+
+    <span style="margin: auto; display: inline-block;">
+
+    <h2>La Liga current table</h2>
+
+    <p>Click on a team to view page with dedicated info.</p>
+
+    <div id="scoreaxis-widget-a3e49" style="border-width:1px;border-color:rgba(0, 0, 0, 0.15);border-style:solid;border-radius:8px;padding:10px;background:rgb(255, 255, 255);width:100%;background-color:#333333"><iframe id="Iframe" src="https://www.scoreaxis.com/widget/standings-widget/564?autoHeight=1&amp;groupNum=undefined&amp;borderColor=%23ffffff&amp;bodyBackground=%23333333&amp;textColor=%23ffffff&amp;inst=a3e49" style="width:100%;border:none;transition:all 300ms ease"></iframe><script>window.addEventListener("DOMContentLoaded",event=>{window.addEventListener("message",event=>{if(event.data.appHeight&&"a3e49"==event.data.inst){let container=document.querySelector("#scoreaxis-widget-a3e49 iframe");container&&(container.style.height=parseInt(event.data.appHeight)+"px")}},!1)});</script></div><div style="font-size: 12px; font-family: Arial, sans-serif; text-align: left;">Data provided by <a target="_blank" href="https://www.scoreaxis.com/">Scoreaxis</a></div>
+
+    </span>
+
+    <!-- End two-cols -->
 </div>
-<div style="font-size: 12px; font-family: Arial, sans-serif; text-align: left;">Data provided by <a target="_blank" href="https://www.scoreaxis.com/">Scoreaxis</a></div>
 
-</span>
+<br /><hr /><br />
+<!-- DIV 2 cols -->
+<div class="two-cols">
 
-<!-- Liverpool Next game -->
+    <!-- Champion's League -->
+    <span style="margin: auto; display: inline-block;">
+        <h2>Champion's league</h2>
 
-<span style="margin: auto; display: inline-block;">
+        <p>Click on a team to view page with dedicated info.</p>
+        <div id="scoreaxis-widget-26f41" style="border-width:1px;border-color:rgba(0, 0, 0, 0.15);border-style:solid;border-radius:8px;padding:10px;background:rgb(255, 255, 255);width:100%;background-color:#333333">
+            <iframe id="Iframe" src="https://www.scoreaxis.com/widget/standings-widget/2?autoHeight=1&amp;groupNum=undefined&amp;bodyBackground=%23333333&amp;textColor=%23ffffff&amp;inst=26f41" style="width:100%;border:none;transition:all 300ms ease"></iframe><script>window.addEventListener("DOMContentLoaded",event=>{window.addEventListener("message",event=>{if(event.data.appHeight&&"26f41"==event.data.inst){let container=document.querySelector("#scoreaxis-widget-26f41 iframe");container&&(container.style.height=parseInt(event.data.appHeight)+"px")}},!1)});</script></div><div style="font-size: 12px; font-family: Arial, sans-serif; text-align: left;">Data provided by <a target="_blank" href="https://www.scoreaxis.com/">Scoreaxis</a>
+        </div>
+        <div style="font-size: 12px; font-family: Arial, sans-serif; text-align: left;">Data provided by <a target="_blank" href="https://www.scoreaxis.com/">Scoreaxis</a>
+        </div>
 
-<h2>Liverpool FC stats and games</h2>
+    </span>
 
-<div id="scoreaxis-widget-b21a7" style="border-width:1px;border-color:rgba(0, 0, 0, 0.15);border-style:solid;border-radius:8px;padding:10px;background:rgb(255, 255, 255);width:100%;background-color:#333333">
-    <iframe id="Iframe" src="https://www.scoreaxis.com/widget/team-info/8?autoHeight=1&amp;bodyBackground=%23333333&amp;textColor=%23ffffff&amp;inst=b21a7" style="width:100%;border:none;transition:all 300ms ease">
-    </iframe>
-    <script>window.addEventListener("DOMContentLoaded",event=>{window.addEventListener("message",event=>{if(event.data.appHeight&&"b21a7"==event.data.inst){let container=document.querySelector("#scoreaxis-widget-b21a7 iframe");container&&(container.style.height=parseInt(event.data.appHeight)+"px")}},!1)});</script>
+    <!-- Europa league  -->
+
+    <span style="margin: auto; display: inline-block;">
+
+        <h2>Europa league</h2>
+
+        <p>Click on a team to view page with dedicated info.</p>
+
+        <div id="scoreaxis-widget-26b7f" style="border-width:1px;border-color:rgba(0, 0, 0, 0.15);border-style:solid;border-radius:8px;padding:10px;background:rgb(255, 255, 255);width:100%;background-color:#333333">
+            <iframe id="Iframe" src="https://www.scoreaxis.com/widget/standings-widget/5?autoHeight=1&amp;groupNum=undefined&amp;bodyBackground=%23333333&amp;textColor=%23ffffff&amp;inst=26b7f" style="width:100%;border:none;transition:all 300ms ease"></iframe>
+            <script>window.addEventListener("DOMContentLoaded",event=>{window.addEventListener("message",event=>{if(event.data.appHeight&&"26b7f"==event.data.inst){let container=document.querySelector("#scoreaxis-widget-26b7f iframe");container&&(container.style.height=parseInt(event.data.appHeight)+"px")}},!1)});</script>
+        </div>
+        <div style="font-size: 12px; font-family: Arial, sans-serif; text-align: left;">Data provided by <a target="_blank" href="https://www.scoreaxis.com/">Scoreaxis</a>
+        </div>
+
+    </span>
+
 </div>
-<div style="font-size: 12px; font-family: Arial, sans-serif; text-align: left;">Team data by <a target="_blank" href="https://www.scoreaxis.com/">Scoreaxis</a>
-</div>
 
-</span>
-
-<!-- End two-cols -->
-</div>
 <hr />
 
 <!-- Tennis rankings -->
@@ -217,7 +129,7 @@
 
 
 <!-- End body Div -->
-</div>
+
 
 </body>
 </html>
