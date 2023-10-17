@@ -1,148 +1,15 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Crypto widgets | weather widgets</title>
+		<title>Widgets - crypto, weather, sports</title>
+		<!-- The favicon -->
 		<link rel="icon" href="btcvico.png" type="image/gif" sizes="32x32">
 		<link href='https://fonts.googleapis.com/css?family=Source Code Pro' rel='stylesheet'>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		
+		<meta name="viewport" content="width=device-width, initial-scale=1">		
+		<!-- Ref to my CSS -->
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+
 		<style>
-
-			/* Navigation strip styles */
-
-			body {
-			margin: 0;
-			font-family: Arial, Helvetica, sans-serif;
-			}
-
-			.topnav {
-			overflow: hidden;
-			background-color: #333;
-			}
-
-			.topnav a {
-			float: left;
-			color: #f2f2f2;
-			text-align: center;
-			padding: 14px 16px;
-			text-decoration: none;
-			font-size: 17px;
-			}
-
-			.topnav a:hover {
-			background-color: #ddd;
-			color: black;
-			}
-
-			.topnav a.active {
-			background-color: #04AA6D;
-			color: white;
-			}
-
-
-
-			/* landing page: screen only: mid screen */
-			@media screen and (min-width: 1023px)
-			{
-			div.multi-cols
-<<<<<<< HEAD
-				{
-					column-count: 3;
-					column-gap: 30px;
-					column-rule: none 1px lightgrey;
-				}		
-=======
-        {
-        column-count: 3;
-        column-gap: 30px;
-        column-rule: none 1px lightgrey;
-        }		
->>>>>>> a5c717bddbbe3b3c3e7c0e269342c9619dff8c9a
-			}
-
-			/* landing page: screen only: mid screen */
-			@media screen and (min-width: 640px) and (max-width: 1023px)
-			{
-			div.multi-cols
-				{
-					column-count: 2;
-					column-gap: 30px;
-					column-rule: none 1px lightgrey;
-				}	
-			}
-
-			/* landing page: screen only: small screen */
-
-			@media screen and (max-width: 640px)
-			{
-				div.multi-cols
-				{
-					column-count: 1;
-					column-gap: 30px;
-					column-rule: none 1px lightgrey;
-				}	
-			}
-
-			/* landing page: screen only: mid screen */
-
-			@media screen and (max-width: 640px)
-				{
-					.two-cols
-				{
-					column-count: 1;
-					column-gap: 30px;
-					column-rule: none 1px lightgrey;
-				}	
-			}
-
-			@media screen and (min-width: 640px)
-			{
-			.two-cols
-				{
-					column-count: 2;
-					column-gap: 30px;
-					column-rule: none 1px lightgrey;
-				}
-			}					
-
-
-			/* dark */
-			body 
-			{
-				padding: 25px;
-				background-color: #071c31;
-				color: #808080;
-				font-size: 25px;
-				font-family: "Segoe UI", Arial, Helvetica, sans-serif;
-			}
-
-			a
-			{
-				color: #808080;
-				text-decoration: none;
-			}
-
-			.dark-mode 
-			{
-				background-color: white;
-				color: black;
-			}
-
-			.Darkbutton 
-			{
-				background-color: #808080;
-				border: none;
-				color: white;
-				padding: 15px 32px;
-				text-align: center;
-				text-decoration: none;
-				display: inline-block;
-				font-size: 16px;
-				margin: 4px 2px;
-				cursor: pointer;
-				border-radius: 4px;
-			}
-
 		</style>
 	</head>
 	<body>
@@ -156,28 +23,20 @@
 			<a href="weather.html">Weather</a>
 		</div>
 
-
-
 		<h1>Widgets</h1>
-		<p>This simple website contains pages with crypto-related data, sports, and weather-related data in Bulgaria. This is an experimental webpage and is subject to change.</p>
+		<p>This simple string of web pages demonstrate how to embed widgets. The widgets added here offer data related to cryptomarkets, sports, news weather. This is an experimental webpage and is subject to change.</p>
 
 		<!-- <h2>Major coins</h2> -->
-		<hr />	
+		<hr />
 
-		<!-- Price Blocks widget by CoinmarketCAP -->
-		<!-- <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinPriceBlock.js"></script>
-		<div id="coinmarketcap-widget-coin-price-block" coins="1,1027,2010,1839,512,2,5034" currency="USD" theme="dark" transparent="true" show-symbol-logo="true">						
-		</div>
-		<hr /> -->
 
-		<!--Performance widget by TradingView-->	
+		<!-- 2 cols DIV -->
 		<div class="two-cols">
-			<!-- Price movements -->
-			
 		
 			<span style="margin: auto; display: inline-block; min-width:60%;">
 		
-				<h2>24hr Price action</h2>    
+				<h2>24hr Price action</h2>   
+				<p>Provides current market prices to top currencies.</p>
 				<script src="https://price-static.crypto.com/latest/public/static/widget/index.js"></script>
 				<div
 				  id="crypto-widget-CoinList"          
@@ -190,6 +49,7 @@
 			<span style="margin: auto; display: inline-block;">
 		
 				<h2>Crypto news</h2>
+				<p>Provides current cypto news. Live BTC & ETH prices at the bottom.</p>
 				<span>
 					<script src="https://cointelegraph.com/news-widget" data-ct-widget-limit="20" data-ct-widget-theme="dark" data-ct-widget-size="medium" data-ct-widget-priceindex="true" data-ct-widget-currency="USD" data-ct-widget-language="en"></script>
 				</span>
@@ -203,21 +63,23 @@
 		<hr />
 
 	<!-- Weather widgets -->					
+		<!-- 2 cols DIV -->
 		<div class="two-cols">
 
 		<!-- MeteoBlue Sofia Widget-->
 			<span style="margin: auto; display: block" class="meteoBlue">
 				<h2><a href="https://www.meteoblue.com/en/weather/week/sofia_bulgaria_727011?utm_source=weather_widget&utm_medium=linkus&utm_content=three&utm_campaign=Weather%2BWidget" target="_blank">Sofia weather</a></h2>
-				<p></p>
+				<p>Quotes by MeteoBlue. </p>
 				<iframe src="https://www.meteoblue.com/en/weather/widget/three/sofia_bulgaria_727011?geoloc=fixed&nocurrent=0&noforecast=0&days=5&tempunit=CELSIUS&windunit=KILOMETER_PER_HOUR&layout=image"  frameborder="0" scrolling="NO" allowtransparency="true" sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox" style="width: 575px; height: 611px"></iframe>
 			</span>	
 
-		<!-- LFC Widget-->
+		<!-- Euronews Widget-->
 		<span style="margin: auto; display: inline-block;">
 
-			<h2>Liverpool FC stats and games</h2>
+			<h2>Euronews widget</h2>
+			<p>Hover with your mouse point over the widget to scroll through latest news.</p>
 
-			<div id="scoreaxis-widget-9ad9e" style="border-width:1px;border-color:rgba(0, 0, 0, 0.15);border-style:solid;border-radius:8px;padding:10px;background:rgb(255, 255, 255);width:100%;background-color:#333333"><iframe id="Iframe" src="https://www.scoreaxis.com/widget/team-info/8?autoHeight=1&amp;statsTab=0&amp;playersTab=0&amp;bodyBackground=%23333333&amp;textColor=%23ffffff&amp;inst=9ad9e" style="width:100%;border:none;transition:all 300ms ease"></iframe><script>window.addEventListener("DOMContentLoaded",event=>{window.addEventListener("message",event=>{if(event.data.appHeight&&"9ad9e"==event.data.inst){let container=document.querySelector("#scoreaxis-widget-9ad9e iframe");container&&(container.style.height=parseInt(event.data.appHeight)+"px")}},!1)});</script></div><div style="font-size: 12px; font-family: Arial, sans-serif; text-align: left;">Team data by <a target="_blank" href="https://www.scoreaxis.com/">Scoreaxis</a></div>
+			<iframe src="https://euronews.com/embed/timeline" scrolling="no" style="border:none; min-height:425px; width:100%; height:100%;"></iframe>
 
 
 		</span>
